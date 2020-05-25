@@ -8,7 +8,7 @@
  * @wordpress-plugin
  * Plugin Name:       _ANDYP - Footer Selector
  * Plugin URI:        http://londonparkour.com
- * Description:       Allows you to select a particular page contents as your footer content.
+ * Description:       <strong>🎛PANEL</strong> | <em>ANDYP > Footer Selector.</em> | Allows you to select a particular page contents as your footer content.
  * Version:           1.0.0
  * Author:            Andy Pearson
  * Author URI:        https://londonparkour.com
@@ -20,3 +20,8 @@
 //  │                  ACF Admin Page for Options & Settings                  │
 //  └─────────────────────────────────────────────────────────────────────────┘
 require __DIR__.'/src/admin/acf_admin_page.php';
+
+//  ┌─────────────────────────────────────────────────────────────────────────┐
+//  │                              The ACF                                    │
+//  └─────────────────────────────────────────────────────────────────────────┘
+require __DIR__.'/src/acf/acf_panel.php'; 

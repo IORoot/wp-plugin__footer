@@ -10,6 +10,7 @@ The plugin will give you a new menu option 'Footer Selector' that will allow you
 
 The footer PHP file will need to grab the ID selected and output it. This is done with the following code:
 
+```
     //  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
     //  ┃                                                                         ┃
     //  ┃                     See ANDYP_FOOTER_SELECT Plugin                      ┃
@@ -24,6 +25,7 @@ The footer PHP file will need to grab the ID selected and output it. This is don
     } else {
         echo 'Copyright 2020, LondonParkour.com';
     }
+```
 
 This simply requests the selected page ID and uses that ID on the get_post() function.
 
@@ -32,7 +34,7 @@ This simply requests the selected page ID and uses that ID on the get_post() fun
 To output the contents of a page builder page, you need a little extra.
 
 First, create a function to get the CSS.
-
+```
     function vc_custom_css($id) {
         $shortcodes_custom_css = get_post_meta( $id, '_wpb_shortcodes_custom_css', true );
         if ( ! empty( $shortcodes_custom_css ) ) {
@@ -41,9 +43,9 @@ First, create a function to get the CSS.
             echo '</style>';
         }
     }
-
+```
 Then you need to call the Visual Composer content and run a do_shortcode() on it.
-
+```
     //  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
     //  ┃                                                                         ┃
     //  ┃                     See ANDYP_FOOTER_SELECT Plugin                      ┃
@@ -60,5 +62,5 @@ Then you need to call the Visual Composer content and run a do_shortcode() on it
     } else {
         echo 'Copyright 2020, LondonParkour.com';
     }
-
+```
 This will then output the content and append the correct CSS included too.
