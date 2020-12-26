@@ -6,7 +6,7 @@
  * @copyright 2020 LondonParkour
  * 
  * @wordpress-plugin
- * Plugin Name:       _ANDYP - Footer Selector
+ * Plugin Name:       _ANDYP - WP - Footer Selector
  * Plugin URI:        http://londonparkour.com
  * Description:       <strong>🎛PANEL</strong> | <em>ANDYP > Footer Selector.</em> | Allows you to select a particular page contents as your footer content.
  * Version:           1.0.0
