@@ -1,4 +1,5 @@
 <?php
+
 if( function_exists('acf_add_local_field_group') ):
 
     acf_add_local_field_group(array(
@@ -6,50 +7,42 @@ if( function_exists('acf_add_local_field_group') ):
         'title' => 'Footer Selector',
         'fields' => array(
             array(
-                'key' => 'field_5d791c22180d7',
-                'label' => 'Footer Page',
-                'name' => 'footer_page',
-                'type' => 'post_object',
+                'key' => 'field_5ffb134220d8c',
+                'label' => 'Footer Code',
+                'name' => 'footer_code',
+                'type' => 'textarea',
                 'instructions' => '',
                 'required' => 0,
                 'conditional_logic' => 0,
                 'wrapper' => array(
-                    'width' => '50',
-                    'class' => '',
+                    'width' => '',
+                    'class' => 'ue__codemirror',
                     'id' => '',
                 ),
-                'hide_admin' => 0,
-                'post_type' => array(
-                    0 => 'page',
-                ),
-                'taxonomy' => '',
-                'allow_null' => 0,
-                'multiple' => 0,
-                'return_format' => 'id',
-                'ui' => 1,
+                'default_value' => '',
+                'placeholder' => '',
+                'maxlength' => '',
+                'rows' => 20,
+                'new_lines' => '',
             ),
             array(
-                'key' => 'field_5f32ad13ef8a8',
-                'label' => 'AMP Footer Page',
-                'name' => 'amp_footer_page',
-                'type' => 'post_object',
+                'key' => 'field_5ffb137820d8d',
+                'label' => 'Footer AMP Code',
+                'name' => 'footer_amp_code',
+                'type' => 'textarea',
                 'instructions' => '',
                 'required' => 0,
                 'conditional_logic' => 0,
                 'wrapper' => array(
-                    'width' => '50',
-                    'class' => '',
+                    'width' => '',
+                    'class' => 'ue__codemirror',
                     'id' => '',
                 ),
-                'hide_admin' => 0,
-                'post_type' => array(
-                    0 => 'page',
-                ),
-                'taxonomy' => '',
-                'allow_null' => 0,
-                'multiple' => 0,
-                'return_format' => 'id',
-                'ui' => 1,
+                'default_value' => '',
+                'placeholder' => '',
+                'maxlength' => '',
+                'rows' => 20,
+                'new_lines' => '',
             ),
         ),
         'location' => array(
