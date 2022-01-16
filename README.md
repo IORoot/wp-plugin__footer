@@ -64,3 +64,8 @@ Then you need to call the Visual Composer content and run a do_shortcode() on it
     }
 ```
 This will then output the content and append the correct CSS included too.
+
+
+## Changelog
+
+v1.0.0 - Initial Release
